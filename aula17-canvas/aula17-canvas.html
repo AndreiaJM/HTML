@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+
+<style>
+
+canvas{
+    width: 500px;
+    height: 500px;
+    border: black 1px solid;
+}
+
+</style>
+
+<body >
+    
+    <!--é colocado mensagem dentro do canvas apenas para os browsers que não dão suporte
+    
+    Serve para desenhar graficos, controlavel por javascript
+    
+    
+    -->
+
+    <canvas id="canva">Seu Browser não da suporte ao elemento canvas</canvas>
+
+    <script>
+
+        function desenha(){
+        var canvas = document.getElementById('canva');
+        var dimensao = canvas.getContext('2')
+        dimensao.fillRect(25,25,100,100)
+
+    }
+
+    desenha();
+
+    </script>
+
+</body>
+</html>

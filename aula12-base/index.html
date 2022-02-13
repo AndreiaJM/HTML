@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <base href="pasta/" target="self">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+
+    <style type="text/css">
+        .pasta{
+            width: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!--Usada dentro do header antes de alguma tag que ultiliza caminho. É usado apenas UMA base dentro da nossa pagina, Atributos: href e target-->
+
+    <!--Da para referenciar uma pasta, assim não há a necessidade de referenciar o caminho completo com a pasta apenas o nome o arquivo que sera buscado na base. Os arquivos que não estão neste caminho padrão deve deve ser procurado a pasta através do ../.
+    O atributo target(_blank, self, parent) quando não é usado o do caminho base deve ser expecificado inline-->
+
+    <!--Da para editar o nome do caminho base com CSS-->
+
+    <!--Qualquer link (a) ou imagem (img) referenciado com SRC é referenciado pela tag base-->
+
+    <img class="pasta" src="jogo.jpg" alt="">
+    <img class="pasta" src="jogo.jpg" alt="">
+    <img class="pasta" src="jogo.jpg" alt="">
+    <img class="pasta" src="jogo.jpg" alt="">
+    <img class="pasta" src="jogo.jpg" alt="">
+    <img class="pasta" src="jogo.jpg" alt="">
+    <img class="pasta" src="jogo.jpg" alt="">
+    <a href="https://github.com/AndreiaJM" target="_blank">Meu git</a>
+
+</body>
+
+</html>

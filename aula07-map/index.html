@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map-area</title>
+</head>
+
+<style>
+    
+
+
+</style>
+<body>
+
+    <!--
+
+        Tag area é a tag guia para a tag map 
+        as duas trabalham em conjunto e mapeia areas de clique de acordo com suas coordenadas
+
+    Tag area:
+
+    Display: none
+    Categoria: Fluxo/ Fraseado
+    Contido: <map>
+    Filhos: none
+    Atributos: shape="forma do mapa" coords="cordenadas no arquivo aberto" href="arquivo que sera mapeado" alt="texto alternativo" 
+
+    *no paint é facil obter as coordenadas da imagem*
+
+    -->
+
+    <img src="./mapa.png" alt="mapa do Brasil" usemap="#mapaBrasil">
+    <map name="mapaBrasil">
+        <area shape="poly" coords="147,172,134,161,123,159,130,145,139,148,147,147,148,154,152,165,162,162,142,174" href="#" alt="texto alternativo">
+    </map>
+
+    <!--Passe o mouse pelo estado de SP-->
+
+    
+    
+</body>
+</html>

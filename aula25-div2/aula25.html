@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+
+<style>
+    .pai{
+        border: 1px black solid;
+        width: 300px;
+        height: 300px;
+        background-color: #333;
+        position: absolute;
+        margin: 50%;
+    }
+    .filho{
+        border: 1px black solid;
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+    }
+</style>
+<body>
+
+    <!--
+        ******Continuação da div********
+        ******dicas de CSS********
+
+        static = padrao
+
+        fixed = fixa a caixa na tela em sua posição atual independente do scrool
+
+        stiket = conteudo que acompanha a tela quando toca na parte de cima
+
+        relative = move de acordo com a posição atual
+
+        absolute = caso o conteiner pai seja relative é movido de acordo com ele
+
+        caso não definido com relative é movido de acordo com a pagina.
+
+        propriedades para mover: 
+
+        top
+        bottom
+        left
+        rigth
+
+
+    -->
+
+    <div class="pai">
+        <div class="filho"></div>
+    </div>
+    
+</body>
+</html>

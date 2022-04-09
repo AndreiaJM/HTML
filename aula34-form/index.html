@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formularios</title>
+
+    <style>
+        .quebra{
+        display: block;
+        margin-bottom: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee  ;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Form: 
+        
+        Display - Block
+        Categoria - Fluxo
+        Contido - Fluxo
+        Filhos - Fluxo
+
+
+        Principais atributos: 
+
+        action: URL com o arquivo que ira receber os dados enviados
+        autocomplete: Autocomplete dos campo ativado ou não 
+        enctype: Codificação(tipos) dados enviados
+        method: Método de envio do formulario(get ou post)
+        name: Nome do formulario
+        novalidade: Desativar a validação pelo Browser
+        target: Como a pagina de destino (action) sera aberta
+
+        label: 
+
+        Display: inline
+        Categoria - Fraseado
+        Contido - Fraseado
+        Filhos - Fraseado
+
+        input:
+
+        parametros: name = identificação do input/ type = tipo do elemento
+
+        Display: inline
+        Categoria - Fluxo/Fraseado/Interativo
+        Contido - Fraseado
+        Filhos - 0
+
+        -----------------------------------------------------
+
+        time = required - campo obrigatorio, horas minima e maxima min="" max=""
+        date
+        datetime-local
+
+    -->
+
+    <form name="f_cadastro" action="#" method="get">
+        <label class="quebra" >Hora</label>
+        <input class="quebra"  type="time" name="f_hora" min="09:00" max="18:00" required>
+
+        <label class="quebra" >Data</label>
+        <input class="quebra" name="f_data" type="date" min="" max="" required> <!--2022-05-01 data é colocado ao contrario no min e max-->
+
+        <label class="quebra" >Data e hora</label>
+        <input class="quebra" type="datetime-local" name="f_datahora">
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+    </form>
+    
+</body>
+</html>

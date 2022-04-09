@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formularios</title>
+
+    <style>
+        .quebra{
+        display: block;
+        margin-bottom: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee  ;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Form: 
+        
+        Display - Block
+        Categoria - Fluxo
+        Contido - Fluxo
+        Filhos - Fluxo
+
+
+        Principais atributos: 
+
+        action: URL com o arquivo que ira receber os dados enviados
+        autocomplete: Autocomplete dos campo ativado ou não 
+        enctype: Codificação(tipos) dados enviados
+        method: Método de envio do formulario(get ou post)
+        name: Nome do formulario
+        novalidade: Desativar a validação pelo Browser
+        target: Como a pagina de destino (action) sera aberta
+
+        label: 
+
+        Display: inline
+        Categoria - Fraseado
+        Contido - Fraseado
+        Filhos - Fraseado
+
+        input:
+
+        parametros: name = identificação do input/ type = tipo do elemento
+
+        Display: inline
+        Categoria - Fluxo/Fraseado/Interativo
+        Contido - Fraseado
+        Filhos - 0
+
+        -----------------------------------------------------
+
+        Password = não mostra os valores digitados
+        checkbox = envia os dados que estiver flergado apenas
+        radio = para trabalhar em conjunto as opções precisam do mesmo nome
+
+        parametro checked = o checkbox ou radio saem marcados por padrão
+
+    -->
+
+    <form name="f_cadastro" action="#" method="get">
+        <label class="quebra">UserName:</label>
+        <input class="quebra" type="text" name="f_username" maxlength="20" size="25">
+        <label class="quebra" >Senha</label>
+        <input class="quebra" type="password" name="f_senha" maxlength="10" size="20">
+        <label class="quebra" >Esportes Favoritos</label>
+        <input type="checkbox" name="f_fut" value="Futebol">Futebol
+        <input type="checkbox" name="f_bas" value="Basquete">Basquete
+        <input type="checkbox" name="f_nat" value="Natação">Natação
+        <label class="quebra">Possui Carro?</label>
+        <input type="radio" name="f_carro" value="s">Sim
+        <input type="radio" name="f_carro" value="n">Não
+
+        <input class="quebra" type="submit" name="f_entrar" value="Entrar">
+
+
+    </form>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formularios</title>
+
+    <style>
+        .quebra{
+        display: block;
+        margin-bottom: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee  ;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Form: 
+        
+        Display - Block
+        Categoria - Fluxo
+        Contido - Fluxo
+        Filhos - Fluxo
+
+
+        Principais atributos: 
+
+        action: URL com o arquivo que ira receber os dados enviados
+        autocomplete: Autocomplete dos campo ativado ou não 
+        enctype: Codificação(tipos) dados enviados
+        method: Método de envio do formulario(get ou post)
+        name: Nome do formulario
+        novalidade: Desativar a validação pelo Browser
+        target: Como a pagina de destino (action) sera aberta
+
+        label: 
+
+        Display: inline
+        Categoria - Fraseado
+        Contido - Fraseado
+        Filhos - Fraseado
+
+        input:
+
+        parametros: name = identificação do input/ type = tipo do elemento
+
+        Display: inline
+        Categoria - Fluxo/Fraseado/Interativo
+        Contido - Fraseado
+        Filhos - 0
+
+        -----------------------------------------------------
+
+        month = retorna o mes da data que foi selecionada
+        week = retorna o numero da semana do ano referente a data que foi selecionada
+        hidden = não é mostrado na tela, serve para passagem de valor para quem vai receber o formulario, pode ser colocado quantos for necessario
+
+    -->
+
+    <form name="f_cadastro" action="#" method="get">
+
+        <label class="quebra" >Mes</label>
+        <input class="quebra"  type="month" name="f_mes">
+
+        <label class="quebra" >Semana</label>
+        <input class="quebra" name="f_semana" type="week"> 
+
+        <input type="hidden" value="cfbcursos">
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+    </form>
+    
+</body>
+</html>

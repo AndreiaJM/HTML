@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formularios</title>
+
+    <style>
+        .quebra{
+        display: block;
+        margin-bottom: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee  ;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Elementos de input : file e url
+    
+        file: escolher arquivo para ser enviado
+            caso o file possua o atributo "multiple pode ser enviado mais de um arquivo"
+
+            multile(boolena)
+            accept = faz com que so seja aceito arquivos em formatos especificos
+
+            No formulario:
+            enctype="multipart/form-data" = prepara o formulario para o envio do arquivo
+
+            No input:
+            accept=".doc,.docx,"
+            accept="application/msword"
+            accept="image/*,.pdf"
+            accept=".jpg,.gif,.png"
+            accept="image/jpg,image/gif,image/png"
+
+        url = Serve para receber urls
+            para trabalhar com httpS:
+            placeholder="https://cfbcursos.com.br"
+            pattern="https://.*"
+    
+    
+    -->
+
+    <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
+
+        <label class="quebra">Selecione o arquivo</label>
+        <input class="quebra" type="file" name="arquivos" multiple accept=".jpg,.gif,.png"9>
+
+        <label class="quebra">Digite a url</label>
+        <input class="quebra" type="url" name="f_url" >
+        
+        <input class="quebra" type="submit" value="Enviar para a url" >
+
+    </form>
+    
+</body>
+</html>

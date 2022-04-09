@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formularios</title>
+
+    <style>
+        .quebra{
+        display: block;
+        margin-bottom: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee  ;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Elementos de input : list/datalist
+
+        caixa de listagem input type != list
+
+        datalist = lista do input tipo list = recebe um id com mesmo nome do list
+
+        option = item da lista
+    -->
+
+    <form name="f_cadastro" action="#" method="get" >
+
+        <input list="f_transportes" name="f_transportes" >
+        <datalist id="f_cores">
+            <option value="red">Vermelho</option>
+            <option value="blue">Azul</option>
+            <option value="pink">Rosa</option>
+            <option value="black">Preto</option>
+            <option value="green">Verde</option>
+            <option value="yellow">Amarelo</option>
+        </datalist>
+        <datalist id="f_transportes">
+            <option value="01">Carros</option>
+            <option value="02">Avião</option>
+            <option value="03">Navio</option>
+            <option value="04">Motocicleta</option>
+            
+        </datalist>
+
+        <input type="submit" value="Enviando">
+
+    </form>
+    
+</body>
+</html>

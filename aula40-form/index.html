@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formularios</title>
+
+    <style>
+        .quebra{
+        display: block;
+        margin-bottom: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee  ;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Elementos de input : select/option
+
+        select: caixa de opções = colocar o name para enviar
+        option: opções do select = value indica a opção que sera enviada 
+
+        parametro multiple permite o envio de mais de um elemento
+    
+        
+    
+    -->
+
+    <form name="f_cadastro" action="#" method="get" >
+
+        <select name="f_DADOS" size="2">
+            <option value="M ">Masculino</option>
+            <option value="F">Feminino</option>
+            <option>Outros</option>
+            <option>Verde</option>
+            <option>Azul</option>
+        </select>
+
+        <input type="submit" value="Enviando">
+
+    </form>
+    
+</body>
+</html>

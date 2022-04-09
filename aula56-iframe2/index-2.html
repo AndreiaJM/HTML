@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        #banner{
+            width: 250px;
+            height: 250px;
+            border: none;
+        }
+    </style>
+
+    <script>
+
+        function mudaimagem(){
+
+            var sort = Math.floor(Math.random()*3)
+            var rosquinhas = ["d1.jpg","d2.jpg","d3.jpg"]
+            var obj = document.getElementById("banner").src=rosquinhas[sort]
+            
+        }
+
+        function iniciar(){
+            mudaimagem()
+        }
+
+        addEventListener("load",iniciar)
+
+    </script>
+</head>
+<body>
+    <!--iframe
+
+        Nesta aula iremos fazer o controle do conteudo do iframe via javascript
+    
+    Abrindo conteudo da ancora dentro do iframe, basta dar um nome para o iframe e colocar no target da ancora
+    
+    -->
+
+    <iframe src="" id="banner"></iframe>
+    
+</body>
+</html>

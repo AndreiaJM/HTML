@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress</title>
+</head>
+<body>
+
+    <!--progress
+    
+        elemento representa a barra de progresso
+
+        parametros:
+
+        value = valor minimo
+        max = valor maximo
+
+        categoria: fluxo, fraseado
+        contido: fraseado
+        filhos: fraseados
+
+    -->
+
+    <!--Caso a barra não seja carregada é mostrado o valor dentro da tag-->
+
+    <!--Barra que acompanha o progresso-->
+
+    <input type="range" min="0" max="100" value="0" 
+    onchange="p1.value=this.value">
+    <br>
+    <progress value="0" max="100" id="p1" >22</progress>
+    
+</body>
+</html>

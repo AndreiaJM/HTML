@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+
+    <!-- object
+
+        Display: inline
+        Categoria: Fluxo, Fraseado, Incorporado
+        Contido: onde incorporado é esperado
+        filhos: direto e unico: <param>
+
+        possue parametros proprios e globais: 
+
+        name=""
+        data="" = inserir o arquivo(imagem,audio,pdf)
+        width="" = alterado o tamanho do arquivo visualmente
+        heigth=""
+    -->
+
+    <object name="logo" data="imagem.jpg" type="" width="300px" height="300px">
+    </object>
+
+    <!--Tambem pode ser inserido o arquivo através da tag param conforme abaixo
+    Ultilizando o param fica mais facil de manipular os arquivos um por um
+
+    quando inserido imagem o width e height redimencionam a janela aonde esta a imagem e não a imagem
+
+    Em sites que disponibilizam partituras de musica a tag object e muito usada
+    -->
+
+    <object name="logo" type="" width="300px" height="300px">
+        <param name="src" value="imagem.jpg">
+    </object>
+
+
+    
+</body>
+</html>

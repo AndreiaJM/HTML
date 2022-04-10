@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meter</title>
+
+    <style>
+        meter{
+            width: 200px;
+            height: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!--meter
+    
+    Barra de medida
+
+    Display: inline
+    Categoria: Fluxo/Fraseado
+    Contidas: Fraseado
+    Filhos: Fraseado
+
+    Atributos: 
+
+    value=""
+    max="" - Faixa de valor
+    min="" - Valor Minino
+    high="" - Atributo de Alerta quando passa o valor informado
+    low="" - Atributo de Alerta quando passa o valor informado
+    optimum=""
+    -->
+    <h1>CFB Cursos</h1>
+    <p>https://github.com/AndreiaJM?tab=repositories</p>
+    <p>https://www.linkedin.com/feed/</p>
+    <p>http://youtube.com/</p>
+    <meter id="n1" value="5" min="0" max="10" high="8" low="2" optimum=""></meter>
+
+    <script>
+
+        /*manipulando a tag meter com java script*/
+
+        document.getElementById("n1").value="2"
+
+    </script>
+    
+</body>
+</html>

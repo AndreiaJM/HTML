@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-td-tr</title>
+</head>
+<body>
+
+    <!--
+        table - container da table
+
+        Display - block
+        Categoria -  fluxo
+        Contida por elementos de fluxo
+        Filhos: caption/tr
+
+        td - filho de tr
+
+        Padrão de construção da table: 
+        Table é o container,
+        Dentro da tabela é criado as linhas(tr) e dentro das linhas as celulas(td)
+
+        tr - linha
+        td - celulas
+
+        Por padrão a table não mostra as bordas, isso é feito atraves de css
+    
+    -->
+
+    <table border="1">
+        <tr><!--Linha da tabela-->
+            <td>Fabricante</td><!--celula da tabela-->
+            <td>Modelo</td><!--celula da tabela-->
+            <td>Valor</td><!--celula da tabela-->
+        </tr>
+        <tr>
+            <td>Honda</td>
+            <td>WRV</td>
+            <td>R$70,000</td>
+        </tr>
+        <tr>
+            <td>Volkswagem</td>
+            <td>Golf GTI</td>
+            <td>R$80,000</td>
+        </tr>
+        <tr>
+            <td>Ford</td>
+            <td>Range</td>
+            <!--Buraco na tabela sem conteudo-->
+        </tr>
+    </table>
+    
+</body>
+</html>

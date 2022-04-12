@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-td-tr Mesclagem </title>
+</head>
+<body>
+
+    <!--
+        table - 
+
+        Mesclagem de linhas: rowspan
+        Mesclagem de colunas: colspan
+    
+    -->
+
+    <table border="1">
+        <tr><!--Mesclagem da linha-->
+            <td rowspan="6">Seminovos</td>
+        </tr>
+
+        <tr><!--Linha da tabela-->
+            <td>Fabricante</td><!--celula da tabela-->
+            <td>Modelo</td><!--celula da tabela-->
+            <td>Valor</td><!--celula da tabela-->
+        </tr>
+        <tr>
+            <td>Honda</td>
+            <td>WRV</td>
+            <td>R$70,000</td>
+        </tr>
+        <tr>
+            <td>Volkswagem</td>
+            <td>Golf GTI</td>
+            <td>R$80,000</td>
+        </tr>
+        <tr>
+            <td>Ford</td>
+            <td>Range</td>
+            <td>R$90,000</td>
+        </tr>
+        <tr>
+            <!--Mesclagem de colunas-->
+            <td colspan="3">Tablelas de preços 2022</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
